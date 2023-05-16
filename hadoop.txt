@@ -1,0 +1,16 @@
+cd /d D:\hadoop-2.10.2\bin
+格式化
+hdfs namenode -format
+
+cd /d D:\hadoop-2.10.2\sbin
+
+start-all
+
+启动spark
+cd /d D:\spark-3.3.1-bin-hadoop3\bin
+
+spark-shell
+
+netstat -aon|findstr "50010"
+
+taskkill /t /f /pid 16896
